@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - M. Rifky Putrama Rahsa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #a8b88c;
+      color: #1c1c1c;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #7da16c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 30px;
+      position: fixed;
+      width: 100%;
+      z-index: 969;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .icon-user {
+      font-size: 20px;
+    }
+
+    /* Home Section */
+    .home {
+      padding: 40px 8%;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* ===== Gambar diatur di CSS ===== */
+    .profile-img {
+      width: 180px;
+      border-radius: 15px;
+      border: 3px solid #333;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.5s ease;
+    margin-top: 30px;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.07);
+    }
+
+    .intro {
+      max-width: 600px;
+      margin-top: 30px;
+    }
+
+    .intro h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .intro h1 {
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .social-title {
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .social-icons img {
+      width: 35px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .tech-icons img {
+      width: 60px;
+      margin: 5px;
+      transition: transform 0.3s;
+      margin-top: 30px;
+    }
+
+    .tech-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    /* About Section */
+    .about {
+      padding: 40px 8%;
+    }
+
+    .about h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Project Section */
+    .project {
+      padding: 40px 8%;
+    }
+
+    .project h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .project-gallery img {
+      width: 340px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .project-gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .tech-icons {
+        justify-content: center;
+      }
+
+      .profile-img {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#project">project</a></li>
+      </ul>
+      <div class="icon-user">👤</div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="profile">
+        <img src="gambar3/WhatsApp_Image_2025-10-03_at_06.50.40_6fb17e69-removebg-preview.png" alt="Rifky" class="profile-img">
+      </div>
+
+      <div class="intro">
+        <h3>hello i’m M.Rifky Putrama Rahsa</h3>
+        <h1>Hello, I come from Palembang,<br> I am 17 years old<br> and I am majoring in RPL.</h1>
+        <p class="social-title">sosial media</p>
+        <div class="social-icons">
+          <a href="#"><img src="gambar3/youtube.png" alt="YouTube"></a>
+          <a href="#"><img src="gambar3/tik-tok.png" alt="TikTok"></a>
+          <a href="#"><img src="gambar3/facebook (1).png" alt="Facebook"></a>
+          <a href="#"><img src="gambar3/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="tech-icons">
+        <img src="gambar3/html-5.png" alt="HTML">
+        <img src="gambar3/css-3.png" alt="CSS">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>
+      My name is Muhammad Rifky Putrama Rahsa. I am a student majoring in Software Engineering (RPL). 
+      I’m interested in the world of technology, especially programming and application development. 
+      My dream is to become a professional programmer who can create useful applications for many people.
+    </p>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="project">
+    <h2>My project</h2>
+    <div class="project-gallery">
+      <img src="gambar3/kaousku.png" alt="Kaosku Project">
+      <img src="gambar3/facebook-clone.png" alt="Facebook Clone">
+      <img src="gambar3/facebook-login.png" alt="Facebook Login">
+    </div>
+  </section>
+
+</body>
+</html>
